@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-8">
-                <h2 class="title"><b>TrackMania and Tool-Assised Speedruns</b></h2>
+                <h2 class="title"><b>TrackMania and Tool-Assisted Speedruns</b></h2>
 
                 <h3 class="subtitle"><b>Introduction</b></h3>
                 <p class="content">
@@ -32,8 +32,9 @@
                     actually started
                     developing such tools for the game. Let's uncover some details about TrackMania TAS'ing and also
                     some related topics.
-                    This post will be a little Q&A for people who are interested. <b>I will not talk about technical details here,
-                    these are deliberately left out.</b>
+                    This post will be a little Q&A for people who are interested. <b>I will not talk about technical
+                        details here,
+                        these are deliberately left out.</b>
                 </p>
 
                 <h3 class="subtitle"><b>Q: What is TAS?</b></h3>
@@ -112,9 +113,10 @@
                 <h3 class="subtitle"><b>Q: Were there cases where these records appeared on TMX?</b></h3>
                 <p class="content">
                     <b>A:</b> Yes, notably <a target="blank"
-                        href="https://tmnforever.tm-exchange.com/main.aspx?action=trackshow&id=2242#auto">A04</a> and
+                        href="https://tmnforever.tm-exchange.com/main.aspx?action=trackshow&id=2242#auto">A04</a>,
+                    <a target="blank" href="https://tmnforever.tm-exchange.com/main.aspx?action=trackshow&id=2309#auto">B10</a> and
                     <a target="blank"
-                        href="https://tmnforever.tm-exchange.com/main.aspx?action=trackshow&id=2309#auto">B10</a> have
+                        href="https://tmnforever.tm-exchange.com/main.aspx?action=trackshow&id=2337#auto">C04</a> have
                     had uploaded TAS’ed replays without any
                     closure from their authors, both of which were removed after people started investigating and proved
                     that these replays
@@ -147,7 +149,8 @@
                     that both parties are happy.
                 </p>
 
-                <p style="margin-bottom: 30px; color: #c4570f;"><i>And now onto some other random but related questions.</i></p>
+                <p style="margin-bottom: 30px; color: #c4570f;"><i>And now onto some other random but related
+                        questions.</i></p>
                 <h3 class="subtitle"><b>Q: Is TrackMania „random”?</b></h3>
                 <p class="content">
                     <b>A:</b> No, TrackMania physics are completely 100% deterministic. That means that the same set of
@@ -172,35 +175,50 @@
                 </p>
                 <h3 class="subtitle"><b>Q: What about <i>maxed</i> records?</b></h3>
                 <p class="content">
-                    <b>A:</b> Besides a few tracks from the TMN ESWC campaign like A-0, there are no <i>maxed</i> records existing in TrackMania. What can
-                    look like a perfect run can be only closer or an approximation to a hypothetical real perfect time. Improving this time
-                    only brings us closer to that unknown limit. Of course, there can also be a <i>human limit</i> which most people really mean
-                    when they’re talking about a maxed record. This limit can be somewhat approximated based on a collection of world
-                    records previously set by drivers. By combining the best parts of these runs we can roughly say what would be the limit
+                    <b>A:</b> Besides a few tracks from the TMN ESWC campaign like A-0, there are no <i>maxed</i>
+                    records existing in TrackMania. What can
+                    look like a perfect run can be only closer or an approximation to a hypothetical real perfect time.
+                    Improving this time
+                    only brings us closer to that unknown limit. Of course, there can also be a <i>human limit</i> which
+                    most people really mean
+                    when they’re talking about a maxed record. This limit can be somewhat approximated based on a
+                    collection of world
+                    records previously set by drivers. By combining the best parts of these runs we can roughly say what
+                    would be the limit
                     with <i>current strategies</i>.
                 </p>
                 <h3 class="subtitle"><b>Q: Can you write a script to discover a maxed record?</b></h3>
                 <p class="content">
-                    <b>A:</b> It’s possible to write a program to take some existing inputs and change them randomly to discover new runs but even
-                    that is hard enough. Searching for a real possible maxed record is completely unfeasible and impossible to do right now
-                    even on really short tracks. To really know the optimal time of a track, you would have to try out <i>every possible input
-                    combination</i>. It’s much more feasible to take an existing record and change random inputs in it to come up with a new combination that
+                    <b>A:</b> It’s possible to write a program to take some existing inputs and change them randomly to
+                    discover new runs but even
+                    that is hard enough. Searching for a real possible maxed record is completely unfeasible and
+                    impossible to do right now
+                    even on really short tracks. To really know the optimal time of a track, you would have to try out
+                    <i>every possible input
+                        combination</i>. It’s much more feasible to take an existing record and change random inputs in
+                    it to come up with a new combination that
                     maybe faster than the original record.<br><br>
 
-                    <i>But let’s just imagine that we want to find out a "maxed" record on the simplest Nadeo track with one turn: A-0. Let's see how much combinations it would take to brute force it.
-                    The current world record is 04.39.</i><br><br>
+                    <i>But let’s just imagine that we want to find out a "maxed" record on the simplest Nadeo track with
+                        one turn: A-0. Let's see how much combinations it would take to brute force it.
+                        The current world record is 04.39.</i><br><br>
 
                     TrackMania checks for input every 10 milliseconds. Suppose we can only do keyboard inputs.
-                    That’s 4390ms / 10 = 439 possible slots in which we can press / release keys. So every 10 milliseconds we can change
+                    That’s 4390ms / 10 = 439 possible slots in which we can press / release keys. So every 10
+                    milliseconds we can change
                     what keys are pressed.<br><br>
 
-                    At each slot we can have 16 possible input combinations since there are 4 keys you can press: up, down, left, right (2^4
+                    At each slot we can have 16 possible input combinations since there are 4 keys you can press: up,
+                    down, left, right (2^4
                     = 16). You can press e.g: left, up and down exactly at the same time.<br><br>
 
-                    That’s 16^439 possible input cominations on this track. Given that this number far exceeds a 64 bit unsigned integer I
-                    won’t try to determine how much time it would take to go through all of these combinations. That’s on a track that is 4
-                    seconds long. Now, most of these combinations would be completely nonsensical but they are still valid. <b>You must admit though
-                    that this is pretty useless, but it shows how complex the TrackMania environment really is.</b>
+                    That’s 16^439 possible input cominations on this track. Given that this number far exceeds a 64 bit
+                    unsigned integer I
+                    won’t try to determine how much time it would take to go through all of these combinations. That’s
+                    on a track that is 4
+                    seconds long. Now, most of these combinations would be completely nonsensical but they are still
+                    valid. <b>You must admit though
+                        that this is pretty useless, but it shows how complex the TrackMania environment really is.</b>
 
                 </p>
             </div>
