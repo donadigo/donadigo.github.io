@@ -180,11 +180,9 @@ function countUnfinishedGhosts(ghosts) {
 function anylyzeCPSpeeds(ghost) {
     let cpSpeeds = [];
     for (let i = 0; i < ghost.cp_times.length; i++) {
-        let targetTime = ghost.cp_times[i];
-        for (let j = 0; j < ghost.record_speeds.length; j++) {
-            if (Math.abs ((j * ghost.sample_period) - targetTime) <= ghost.sample_period) {
-                cpSpeeds.push(ghost.record_speeds[j]);
-            }
+        let ghostIndex = Math.floor(ghost.cp_times[i] / ghost.sample_period);
+        if (ghostIndex < ghost.record_speeds.length) {
+            cpSpeeds.push(ghost.record_speeds[ghostIndex]);
         }
     }
 
