@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Movable Blocks 0.1</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md" style="margin-top: 10px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <button id="dark-toggle-btn" class="btn btn-primary">Dark mode</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <h2><b>Movable Blocks for Openplanet</b></h2>
+                <h6 class="published"><i>Published on Februaru 17th, 2020 by donadigo</i></h6>
+
+                <section id="intro">
+                    <h3 class="subtitle"><b>Introduction</b></h3>
+                    <p class="content">
+                        Movable Blocks is a plugin for Openplanet that allows you to introduce
+                        movement into your TrackMania maps.
+                    </p>
+                </section>
+
+                <section id="features">
+                    <h3 class="subtitle"><b>Features</b></h3>
+                    <div class="content">
+                        With the initial 0.1 release you can:
+                        <ul>
+                            <li>Create "<b>movables</b>" which are simple scripts that define how a block will move on the map</li>
+                            <li>Control the state of these movables through MediaTracker clips</li>
+                            <li>Share the maps that use movable blocks and have them played by other people (the Movable Blocks script is required)</li>
+                        </ul>
+                    </p>
+                </section>
+
+                <section id="howto">
+                    <h3 class="subtitle"><b>How to use?</b></h3>
+                    <p class="content">
+                       First, go to the TrackMania editor and create a new track. Press "F3" to show the Openplanet top menu.
+                       <b>There now should be a new window called "Movable Blocks"visible.</b>
+                       If the window doesn't show make sure that you installed the plugin correctly and that
+                       the "Movable Blocks" checkbox in Openplanet -> Settings -> Plugins is checked.
+                       <br><br>
+
+                       Below is a video illustrating creating a simple track with movable blocks:<br><br>
+                        <iframe src="https://www.youtube.com/embed/O3c3qRGHAz0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                </section>
+
+                <section id="commands">
+                    <h3 class="subtitle"><b>MediaTracker commands</b></h3>
+                    <div class="content">
+                        Available MediaTracker commands as of 0.1:
+                        <ul>
+                            <li>enable <code>movable id</code>: enables the movable, if the movable is already enabled, this does nothing</li>
+                            <li>disable <code>movable id</code>: disables the movable, if the movable is already disabled, this does nothing</li>
+                            <li>toggle <code>movable id</code>: toggles the movable, making it enabled when it is disabled and vice versa</li>
+                            <li>reset <code>movable id</code>: resets the movable to it's initial state, disabling it if it's enabled</li>
+                        </ul>
+                    </p>
+                </section>
+
+                <section id="issues">
+                    <h3 class="subtitle"><b>Known issues</b></h3>
+                    <div class="content">
+                        <ul>
+                            <li>Trying to write anything in the Id field collapses the movable header</li>
+                            <li>Items cannot be moved yet</li>
+                            <li>Some blocks that are made of multiple parts will not be entirely moved</li>
+                        </ul>
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
