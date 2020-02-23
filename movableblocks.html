@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Movable Blocks 0.1</title>
+    <title>Movable Blocks 0.2</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-8">
                 <h2><b>Movable Blocks for Openplanet</b></h2>
-                <h6 class="published"><i>Published on February 17th, 2020 by donadigo</i></h6>
+                <h6 class="published"><i>Published on February 17th, 2020 by donadigo, updated February 23rd, 2020</i></h6>
 
                 <section id="intro">
                     <h3 class="subtitle"><b>Introduction</b></h3>
@@ -37,7 +37,7 @@
                 <section id="features">
                     <h3 class="subtitle"><b>Features</b></h3>
                     <div class="content">
-                        With the initial 0.1 release you can:
+                        With Movable Blocks you can:
                         <ul>
                             <li>Create "<b>movables</b>" which are simple scripts that define how a block will move on the map</li>
                             <li>Control the state of these movables through MediaTracker clips</li>
@@ -80,6 +80,28 @@
                             <li>disable <code>movable id</code>: disables the movable, if the movable is already disabled, this does nothing</li>
                             <li>toggle <code>movable id</code>: toggles the movable, making it enabled when it is disabled and vice versa</li>
                             <li>reset <code>movable id</code>: resets the movable to it's initial state, disabling it if it's enabled</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="releases">
+                    <h3 class="subtitle"><b>Releases</b></h3>
+                    <div class="content">
+                        <h4>0.2 - February 23rd 2020</h4>
+                        <p>This release contains important fixes to the gameplay:</p>
+                        <ul class="desc-ul">
+                            <li>
+                                Fixed block speed movement based on current FPS of the game.
+                                <i>Keep in mind that physics are still not deterministic, differnent runs will have different results.</i>
+                            </li>
+                            <li>Fixed performance issues when playing on a large map with the plugin enabled.
+                                The game should not lag anymore when playing on maps without movable blocks at all.
+                            </li>
+                            <li>
+                                Fixed that <code>reset</code> commands would reset block's position but would not update their collision.
+                            </li>
+                            <li>The plugin now properly shuts down after disabling it in the menu.</li>
+                            <li>The DLL can now be extracted into <code>Scripts</code> or <code>Openplanet4</code>.</li>
                         </ul>
                     </div>
                 </section>

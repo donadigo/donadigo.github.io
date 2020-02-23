@@ -33,3 +33,7 @@ body {
         margin: 10px;
     }
 }
+
+.desc-ul li {
+    margin: 0 0 15px 0;
+}
