@@ -9,6 +9,7 @@ body {
 .published {
     margin-bottom: 60px;
     color: rgb(94, 94, 94);
+    font-style: italic;
 }
 
 .subtitle {
@@ -26,6 +27,20 @@ body {
 
 .body-dark .published {
     color: rgb(156, 156, 156);
+}
+
+.post-img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.caption {
+    font-style: italic;
+    color: rgb(94, 94, 94);
+}
+
+.post-video {
+    width: 100%;
 }
 
 @media (max-width: 480px) {

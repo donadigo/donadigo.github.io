@@ -87,6 +87,28 @@
                 <section id="releases">
                     <h3 class="subtitle"><b>Releases</b></h3>
                     <div class="content">
+                        <h4>0.3 - June 11th 2020</h4>
+                        <p>This release contains new features and command extensions:</p>
+                        <ul class="desc-ul">
+                            <li>
+                                Items can now be moved. Moving an item will also move any of it's
+                                triggers, such as CP or finish triggers.
+                            </li>
+                            <li>
+                                You can now specify multiple movable ID's in MediaTracker commands.
+                                Simply separte them via comma e.g: <code>enable 1,2,3,9</code>
+                            </li>
+                            <li>
+                                You can also replace a movable ID with a special token <code>all</code>
+                                to apply the command to all movables e.g: <code>reset all</code>.
+                            </li>
+                            <li>
+                                Any movable will now move precisely to it's end position,
+                                which wasn't the case in previous versions. This allows
+                                to create fully smooth surfaces out of multiple movables.
+                            </li>
+                            <li>Added <code>//depend</code> for DLL detection by other scripts.</li>
+                        </ul>
                         <h4>0.2 - February 23rd 2020</h4>
                         <p>This release contains important fixes to the gameplay:</p>
                         <ul class="desc-ul">
@@ -112,7 +134,7 @@
                         <b>Q: The plugin does not work! What do?</b><br>
                         <b>A:</b> If for some reason the plugin does not work after installing it make sure that:
                         <ul>
-                            <li>The <code>MovableBlocks.dll</code> file is located within <code>C:\Users\Username\Openplanet4\</code></li>
+                            <li>The <code>MovableBlocks.dll</code> file is located within <code>C:\Users\Username\Openplanet4\</code> or <code>C:\Users\Username\Openplanet4\Scripts</code></li>
                             <li>The <code>MovableBlocks</code> folder is located within <code>C:\Users\Username\Openplanet4\Scripts</code></li>
                         </ul><br>
 
@@ -140,7 +162,6 @@
                     <div class="content">
                         <ul>
                             <li>Trying to write anything in the Id field collapses the movable header</li>
-                            <li>Items cannot be moved yet</li>
                             <li>Some blocks that are made of multiple parts will not be entirely moved</li>
                         </ul>
                     </div>
