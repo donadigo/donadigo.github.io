@@ -2,6 +2,10 @@ body {
     margin: 50px;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
 .title {
     margin-bottom: 70px;
 }
