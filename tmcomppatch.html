@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="poststyle.css">
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <title>TrackMania Competition Patch</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md" style="margin-top: 10px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <button id="dark-toggle-btn" class="btn btn-primary">Dark mode</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <h2><b>TrackMania Competition Patch (Beta)</b></h2>
+                <h6 class="published"><i>Published on December 5th, 2020 by donadigo</i></h6>
+
+                <section id="intro">
+                    <h3 class="subtitle"><b>What is Competition Patch?</b></h3>
+                    <p class="content">
+                        TrackMania Competition Patch is a special patch for the game that does not allow
+                        means of cheating such as using macros, slowing down the game and other
+                        forms of injecting inputs. The patch is in a beta phase, which means there could be 
+                        bugs or crashes while playing the game.
+                    </p>
+                </section>
+
+                <section id="why">
+                    <h3 class="subtitle"><b>Why is there a need for this patch?</b></h3>
+                    <p class="content">
+                        The patch is meant to solidify & validate records uploaded on important TMX categories
+                        such as Official Campaigns and Classic tracks. With the increasing interest in TAS'ing
+                        the game, the patch is a leeway into ensuring the leaderboards will stay clean for 
+                        the forseeable future. None of this has been yet established as a rule in TMX itself,
+                        but we're discussing the possibilites of having support implemented for this patch
+                        and rules changed in replay uploading (only for important categories that is).
+                    </p>
+                </section>
+
+                <section id="how">
+                    <h3 class="subtitle"><b>How does it work?</b></h3>
+                    <p class="content">
+                        The patch is simply installed into the game's installation directory and from
+                        there, the patch will always work when you open the game. Under the hood, the patch
+                        overrides the input system of TrackMania so that it can verify that all inputs
+                        come from a real hardware device. The patch is in no way invasive - it <b>does not</b>
+                        install any low level drivers on your system or collect any data about it.
+                    </p>
+                </section>
+
+                <section id="distinguish">
+                    <h3 class="subtitle"><b>How do I tell I'm running the game with the patch?</b></h3>
+                    <p class="content">
+                        For now the only real way to see, is to check the title of the game's window.
+                        If the game is fullscreen, switch to windowed mode and a (Competition Patch) should be visible in the title of the window.
+                    </p>
+                </section>
+
+                <section id="issues">
+                    <h3 class="subtitle"><b>Known issues</b></h3>
+                    <ul>
+                        <li>If numlock is enabled, the numpad behaves differently than in the vanilla game. For example pressing "2" will brake ingame. Make sure to disable numlock while playing the game.</li>
+                        <li>Pressing enter in editor for test mode skips directly to the run without the "zoom in" camera.</li>
+                    </ul>
+                    <p class="content"></p>
+                </section>
+
+                <section id="test">
+                    <h3 class="subtitle"><b>What should I test?</b></h3>
+                    <p class="content">
+                        The game should feel just like vanilla in this regard, but the patch adds a new functionality for replay validation.
+                        If you've drove a run with the patch, save the replay, edit it and click on the validate button.
+                        If you didn't use any tools or macros, the result should say <b style="color: #00FF00;">Competition Match</b> after validating.
+                        If the result is otherwise, but you still didn't use any tools - then that is a bug in the patch.
+                        If the text doesn't show, make sure you are using English language ingame. Replays with different input devices such as gamepad, joystick are appreciated.
+                    </p>
+                </section>
+
+                <section id="before">
+                    <h3 class="subtitle"><b>Before downloading</b></h3>
+                    <p class="content">
+                        This is not a patch in it's final form, bugs or crashes are expected when running this version - you can use it
+                        for serious play, however be ready that it might result in a crash or a bug in the patch that makes your replay mismatch.
+                        The game should behave just like without it, even though there may be some differences.
+                    </p>
+                </section>
+
+                <section id="download">
+                    <h3 class="subtitle"><b>Download</b></h3>
+                    <p class="content">
+                        <a href="https://github.com/donadigo/donadigo.github.io/raw/master/data/TMCompetitionPatch_05_12.zip">Download the latest beta version: TMCompetitionPatch_05_12.zip</a>
+                    </p>
+                </section>
+
+                <section id="install">
+                    <h3 class="subtitle"><b>How do I install?</b></h3>
+                    <ul>
+                        <li>1. Navigate to <b>C:\Program Files (x86)\TmUnitedForever</b> or <b>C:\Program Files (x86)\TmNationsForever</b> depending on your game version or to other location if your game is installed elsewhere.</li>
+                        <li>2. Unpack all files to the navigated location. All 4 DLL's should now be extracted in the game's install directory.</li>
+                        <li>3. Done, this process will likely change for the final release.</li>
+                    </ul>
+                    <p class="content"></p>
+                </section>
+
+                <section id="uninstall">
+                    <h3 class="subtitle"><b>How do I uninstall?</b></h3>
+                    <p class="content">
+                        If you want to uninstall the patch, simply navigate to the game directory again and rename dinput8.dll to anything other than that and the patch should stop working. 
+                        Deleting files you've unpacked before should also do the job.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="post-index.js"></script>
+</body>
+
+</html>
