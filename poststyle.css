@@ -47,6 +47,34 @@ li {
     width: 100%;
 }
 
+.download-button {
+    display: inline;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 250px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #df3636;
+    border: 2px solid #df3636;
+    color: #fff;
+}
+
+.discord-button {
+    display: inline;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 250px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #fff;
+}
+
 @media (max-width: 480px) {
     body {
         margin: 10px;
