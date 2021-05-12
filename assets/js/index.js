@@ -67,3 +67,14 @@ for (let elem of document.getElementsByClassName("tighten-ph")) {
 for (let elem of document.getElementsByName("copy-button")) {
     elem.onclick = onCopyClicked;
 }
+
+let currentTheme = document.documentElement.getAttribute('data-theme');
+if (!currentTheme) {
+    currentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+if (currentTheme === "dark") {
+    document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else {
+    document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+}
