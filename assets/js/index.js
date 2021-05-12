@@ -42,6 +42,7 @@ function draw() {
     const pos = getLogoPosition();
     strokeWeight(2);
     noFill();
+
     for (let i = 0; i < 20; i++) {
         let r = radius * i / 20;
         stroke(198, 238, 13, opacity);

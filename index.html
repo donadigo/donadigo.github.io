@@ -1,101 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/logo.png"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-    <title>donadigo</title>
-</head>
-<body class="body-dark">
-    <nav id="header" class="navbar fixed-top navbar-expand-md">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo_green.png" width="40" id="logo-header">
-        </a>
-        <!-- <div class="collapse navbar-collapse"> -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <b><a class="nav-link" href="blog.html">Blog</a></b>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <b><a class="nav-link" href="gallery.html">Gallery</a></b>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <b><a class="nav-link" href="contact.html">Contact</a></b>
-                </li>
-            </ul>
-        <!-- </div> -->
-    </nav>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-8">
-                <h1 class="tighten-ph" id="header-text">
-                    <b>Hello,<br>
-                    I'm Adam<br>
-                    or <span style="color: #c6ee0d;">donadigo</span>.
-                    </b>
-                </h1>
-                <h4 class="desc">
-                    My passion is programming and graphic design. I love
-                    discovering new technologies and solving challenging problems.
-                </h4>
+---
+layout: default
+---
 
-                <h5>
-                    <a class="link" href="https://github.com/donadigo" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a class="link" href="https://www.youtube.com/donadigo" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-                    <a class="link" href="https://www.twitter.com/donadigo" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                </h5>
+<h1 class="tighten-ph" id="header-text">
+    <b>Hello,<br>
+    I'm Adam<br>
+    or <span style="color: var(--link-color);">donadigo</span>.
+    </b>
+</h1>
+<h4 class="desc">
+    My passion is programming and graphic design. I love
+    discovering new technologies and solving challenging problems.
+</h4>
 
-                <h2 class="tighten-ph"><b>My Work</b></h2>
-                <div class="container">
-                    <div class="row">
-                        <div style="padding-left: 0px;">
-                            <img src="images/elementary-logo.svg">
-                        </div>
-                        <div class="col-md-8">
-                            <h3>elementary OS</h3>
-                            Over the years I've contributed many features & solved many bugs in the
-                            open-source Linux platform <b>elementary OS.</b> I also wrote
-                            two widely used apps, <a href="https://appcenter.elementary.io/com.github.donadigo.appeditor/">AppEditor</a>
-                            and <a href="https://appcenter.elementary.io/com.github.donadigo.eddy/">Eddy</a> in the Vala programming
-                            language.
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div style="padding-left: 0px;">
-                            <img width="128px" src="images/languages.png">
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Python And C++ Development</h3>
-                            <a href="https://github.com/donadigo/TMTrackNN">TMTrackNN</a> is one
-                            of my flagship projects that uses Python and C++. It utilises neural networks to 
-                            generate new tracks for a game called TrackMania. <a href="https://medium.com/@donadigo/tmtracknn-generating-trackmania-tracks-with-neural-networks-146db058e7cb">Read more.</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div style="padding-left: 0px;">
-                            <img src="images/brush.png">
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Graphic Design</h3>
-                            Occasionally, I also like to create new banners, logos and posters in Photoshop or GIMP.
-                            Check out the <a href="gallery.html">Gallery</a> or the <a href="https://www.youtube.com/donadigo">YouTube channel</a> to
-                            see my portfolio.
-                        </div>
-                    </div>
-                </div>
-            </div>
+<h5>
+    <a class="link" href="https://github.com/donadigo" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a class="link" href="https://www.youtube.com/donadigo" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+    <a class="link" href="https://www.twitter.com/donadigo" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+</h5>
+
+<h2 class="tighten-ph"><b>My Work</b></h2>
+<div class="container">
+    <div class="row">
+        <div style="padding-left: 0px;">
+            <img src="assets/images/elementary-logo.svg">
+        </div>
+        <div class="col-md-8">
+            <h3>elementary OS</h3>
+            Over the years I've contributed many features & solved many bugs in the
+            open-source Linux platform <b>elementary OS.</b> I also wrote
+            two widely used apps, <a href="https://appcenter.elementary.io/com.github.donadigo.appeditor/">AppEditor</a>
+            and <a href="https://appcenter.elementary.io/com.github.donadigo.eddy/">Eddy</a> in the Vala programming
+            language.
         </div>
     </div>
-    <script src="index.js"></script>
-</body>
-</html>
+    <div class="row">
+        <div style="padding-left: 0px;">
+            <img width="128px" src="assets/images/languages.png">
+        </div>
+        <div class="col-md-8">
+            <h3>Python And C++ Development</h3>
+            <a href="https://github.com/donadigo/TMTrackNN">TMTrackNN</a> is one
+            of my flagship projects that uses Python and C++. It utilises neural networks to 
+            generate new tracks for a game called TrackMania. <a href="https://medium.com/@donadigo/tmtracknn-generating-trackmania-tracks-with-neural-networks-146db058e7cb">Read more.</a>
+        </div>
+    </div>
+    <div class="row">
+        <div style="padding-left: 0px;">
+            <img src="assets/images/brush.png">
+        </div>
+        <div class="col-md-8">
+            <h3>Graphic Design</h3>
+            Occasionally, I also like to create new banners, logos and posters in Photoshop or GIMP.
+            Check out the <a href="gallery.html">Gallery</a> or the <a href="https://www.youtube.com/donadigo">YouTube channel</a> to
+            see my portfolio.
+        </div>
+    </div>
+</div>

@@ -1,9 +1,17 @@
-body {
-    margin: 50px;
+---
+---
+
+h2 {
+    margin-bottom: .5rem;
 }
 
-li {
-    margin-bottom: 10px;
+h3 {
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 30px;
 }
 
 .title {
@@ -11,8 +19,7 @@ li {
 }
 
 .published {
-    margin-bottom: 60px;
-    color: rgb(94, 94, 94);
+    color: var(--light-text-color);
     font-style: italic;
 }
 
@@ -24,15 +31,6 @@ li {
     margin-bottom: 60px;
 }
 
-.body-dark {
-    background: rgb(24, 24, 24);
-    color: rgb(218, 218, 218);
-}
-
-.body-dark .published {
-    color: rgb(156, 156, 156);
-}
-
 .post-img {
     width: 100%;
     margin-bottom: 30px;
@@ -40,7 +38,7 @@ li {
 
 .caption {
     font-style: italic;
-    color: rgb(94, 94, 94);
+    color: var(--light-text-color);
 }
 
 .post-video {
@@ -84,3 +82,11 @@ li {
 .desc-ul li {
     margin: 0 0 15px 0;
 }
+
+code {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+}
+
+// #content br {display: none;}
+// #content p br {display: inline;}

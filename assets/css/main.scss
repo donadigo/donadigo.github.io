@@ -1,0 +1,157 @@
+---
+---
+
+html, html[data-theme="light"] {
+    --main-background-color: rgb(230, 230, 230);
+    --main-text-color: rgb(24, 24, 24);
+    --main-text-color-rgb:24, 24, 24;
+    --header-color: #d6d6d6;
+    --link-color: #19640b;
+    --link-color-rgb:25, 100, 11;
+    --link-hover: #389b24;
+    --light-text-color: rgb(37, 37, 37);
+    --code-background-color: rgb(197, 197, 197);
+    --code-color: black;
+}
+
+html[data-theme="dark"] {
+    --main-background-color: rgb(24, 24, 24);
+    --main-text-color: rgb(218, 218, 218);
+    --main-text-color-rgb:218, 218, 218;
+    --header-color: #242424;
+    --link-color: #c6ee0d;
+    --link-color-rgb:198, 238, 13;
+    --link-hover: #e0f38b;
+    --light-text-color: rgb(160, 160, 160);
+    --code-background-color: rgb(19, 19, 19);
+    --code-color: var(--light-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    html, html[data-theme="dark"] {
+        --main-background-color: rgb(24, 24, 24);
+        --main-text-color: rgb(218, 218, 218);
+        --main-text-color-rgb:218, 218, 218;
+        --header-color: #242424;
+        --link-color: #c6ee0d;
+        --link-color-rgb:198, 238, 13;
+        --link-hover: #e0f38b;
+        --light-text-color: rgb(160, 160, 160);
+        --code-background-color: rgb(19, 19, 19);
+        --code-color: var(--light-text-color);
+    }
+
+    html[data-theme="light"] {
+        --main-background-color: rgb(230, 230, 230);
+        --main-text-color: rgb(24, 24, 24);
+        --main-text-color-rgb:24, 24, 24;
+        --header-color: #d6d6d6;
+        --link-color: #19640b;
+        --link-color-rgb:25, 100, 11;
+        --link-hover: #389b24;
+        --light-text-color: rgb(37, 37, 37);
+        --code-background-color: rgb(197, 197, 197);
+        --code-color: black;
+    }
+}
+
+body {
+    padding-top: 150px;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h4 {
+    letter-spacing: -1px;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+h5 {
+    margin-bottom: 60px;
+}
+
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+    transition: all 0.5s;
+}
+
+.btn {
+    color: var(--main-text-color) !important;
+    background: none !important;
+    border-color: rgba(var(--main-text-color-rgb), 0.5) !important;
+}
+
+.btn:active, .btn:focus {
+    // outline: var(--link-color) !important;
+    box-shadow: 0 0 0 .2rem rgba(var(--link-color-rgb), 0.4) !important;
+    border: none !important;
+}
+
+.btn-primary {
+    border-color: var(--link-color);
+}
+
+#header {
+    background-color: var(--header-color);
+    -webkit-box-shadow: 0px 10px 22px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 22px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 22px -11px rgba(0,0,0,0.75);
+}
+
+#header canvas {
+    z-index: -1;
+}
+
+#logo-header {
+    clip-path: circle(20px at center);
+}
+
+.tighten-ph {
+    transition: all 0.5s;
+}
+
+.tight {
+    letter-spacing: -2px;
+}
+
+.link {
+    margin-right: 30px;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+// .body-dark {
+//     background: rgb(24, 24, 24);
+//     color: rgb(218, 218, 218);
+// }
+
+.photos img {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: large;
+}
