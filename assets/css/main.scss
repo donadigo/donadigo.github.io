@@ -84,6 +84,7 @@ h5 {
 
 a {
     color: var(--link-color);
+    font-weight: bold;
 }
 
 a:hover {
@@ -154,4 +155,21 @@ a:hover {
 
 .title {
     font-size: large;
+}
+
+.centered {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid var(--main-text-color);
+    margin-bottom: 80px;
+}
+
+th, td {
+    padding: 7px;
 }

@@ -9,6 +9,13 @@ permalink: /blog/
 </h1>
 
 {% for post in site.posts %}
-    <h4 style="margin-top: 40px;"><b><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></b></h4>
+    <h4 style="margin-top: 40px;"><b><a href="{{ post.url | prepend: site.baseurl }}">
+        {% if post.blogtitle %}
+            {{ post.blogtitle }}
+        {% else %}
+            {{ post.title }}
+        {% endif %}
+
+    </a></b></h4>
     <i><time>Published on {{ post.date | date: "%B %-d, %Y" }}</time></i>
 {% endfor %}

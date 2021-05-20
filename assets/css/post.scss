@@ -5,6 +5,11 @@ h2 {
     margin-bottom: .5rem;
 }
 
+#content h2 {
+    font-weight: bold;
+    margin-top: 150px;
+}
+
 h3 {
     margin-top: 60px;
     font-weight: bold;
@@ -88,5 +93,10 @@ code {
     color: var(--code-color);
 }
 
-// #content br {display: none;}
-// #content p br {display: inline;}
+#content img {
+    width: 100%;
+}
+
+iframe {
+    margin-bottom: 20px;
+}
