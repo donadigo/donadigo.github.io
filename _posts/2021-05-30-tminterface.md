@@ -45,6 +45,9 @@ The `config.txt` in `C:\Users\username\Documents\TMInterface` file enables you t
 * **Q:** "Game is not compatible with TMInterface" error<br>
 **A:** It is recommended to use a standalone version of the game available [here](https://nadeo-download.cdn.ubi.com/trackmaniaforever/tmnationsforever_setup.exe).
 
+### Tutorials
+*Soon!*
+
 ### Planned features
 * A save state system which allows players to share state files and load them into the game
 * An interactive inputs editor allowing for rapid experimentation
