@@ -19,9 +19,12 @@ TMInterface is a state-of-the-art TAS tool for Trackmania Nations and United For
 </div>
 
 ### How do I use it?
-TMInterface bases off everything on console commands, much like Source games such as CS:GO. From setting the speed of the game, to setting up a bruteforce script. You can toggle the console by pressing the tilde `~` key. Script files are stored in `C:\Users\username\Documents\TMInterface\Scripts`. There you can create new script files that contain your inputs/other commands that are available with TMInterface. You can open this directory by typing `open_scripts_folder` and hitting enter. Type `help` to get list of all the commands available and their short description. Type `vars` to see all variables you can set. You can check out all available commands & variables [here](https://github.com/donadigo/TMInterfacePublic/blob/master/docs.md).
+TMInterface bases off everything on console commands, much like Source games such as CS:GO. From setting the speed of the game, to setting up a bruteforce script. You can toggle the console by pressing the tilde `~` key. Script files are stored in `C:\Users\username\Documents\TMInterface\Scripts`. **Launch the tool for it to create this folder, if it does not exist.** There you can create new script files that contain your inputs/other commands that are available with TMInterface. You can open this directory by typing `open_scripts_folder` and hitting enter. Type `help` to get list of all the commands available and their short description. Type `vars` to see all variables you can set. You can check out all available commands & variables [here](https://github.com/donadigo/TMInterfacePublic/blob/master/docs.md).
 
 The `config.txt` in `C:\Users\username\Documents\TMInterface` file enables you to run a set of commands at the beginning of TMInterface startup. In there, you can put commands like `bind r replay` to bind the R key to the command `replay` permanently.
+
+### Downloads
+Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files](https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterfaceBeta_1.0.0.zip).
 
 ### Useful commands
 * `set speed 5` - Sets the global game speed to 5x the normal speed.
