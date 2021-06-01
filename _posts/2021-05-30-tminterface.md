@@ -6,10 +6,12 @@ permalink: tminterface
 ---
 
 ### What is TMInterface?
-TMInterface is a state-of-the-art TAS tool for Trackmania Nations and United Forever. It allows you to replay, analyze and modify runs to achieve faster runs and push the game to its limits.  It was never meant to be a tool for cheating or unfair play and this is why it comes with security features that doesn't allow for this. **Do not** ever attempt to drive legitimate runs and compete on public leaderboards while running the game with the tool injected. Any run done with the tool  is as a tool assisted run, regardless if the tool injected inputs or not.
+TMInterface is a state-of-the-art TAS tool for Trackmania Nations and United Forever. It allows you to replay, analyze and modify runs to achieve faster runs and push the game to its limits.  It was never meant to be a tool for cheating or unfair play and this is why it comes with security features that doesn't allow for this. **Do not** ever attempt to drive legitimate runs and compete on public leaderboards while running the game with the tool injected. Any run done with the tool is as a tool assisted run, regardless if the tool injected inputs or not.
+
+**Note: If you are using the Steam version of the game - first, [apply the Steam TMNF Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=448953593).**
 
 <div style="display: flex;">
-    <form action="https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterfaceBeta_Setup_1.0.0.exe" style="margin-right: 20px;">
+    <form action="https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_Setup_1.0.0.exe" style="margin-right: 20px;">
         <input type="submit" class="download-button button-cyan" value="Download the newest version"/>
     </form>
 
@@ -24,7 +26,7 @@ TMInterface bases off everything on console commands, much like Source games suc
 The `config.txt` in `C:\Users\username\Documents\TMInterface` file enables you to run a set of commands at the beginning of TMInterface startup. In there, you can put commands like `bind r replay` to bind the R key to the command `replay` permanently.
 
 ### Downloads
-Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files](https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterfaceBeta_1.0.0.zip).
+Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files](https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_1.0.0.zip). Extract these installation files into your game directory, usually `C:\Program Files (x86)\TmNationsForever` `C:\Program Files (x86)\TmUnitedForever` or `C:\Program Files (x86)\Steam\steamapps\common\TrackMania Nations Forever`.
 
 ### Useful commands
 * `set speed 5` - Sets the global game speed to 5x the normal speed.
@@ -37,7 +39,7 @@ Head to the top of the page to download the installer for the newest version. If
 
 ### Common questions
 * **Q:** Is TMInterface compatible with Competition Patch?<br>
-**A:** Yes, TMInterface can be installed alongside the Comeptition Patch.
+**A:** Yes, TMInterface can be installed alongside the Competition Patch.
 
 * **Q:** The analog steering/acceleration does not work.<br>
 **A:** All actions need to be bound in the inputs menu ingame. While running TMInterface, you need to connect a controller device to replicate analog input. If you don't own a controller, you can use software like [VJoy](https://sourceforge.net/projects/vjoystick/) to emulate it.<br>
