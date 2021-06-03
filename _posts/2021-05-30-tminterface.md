@@ -11,7 +11,7 @@ TMInterface is a state-of-the-art TAS tool for Trackmania Nations and United For
 **Note: If you are using the Steam version of the game - first, [apply the Steam TMNF Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=448953593).**
 
 <div style="display: flex;">
-    <form action="https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_Setup_1.0.2.exe" style="margin-right: 20px;">
+    <form action="https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_Setup_1.0.3.exe" style="margin-right: 20px;">
         <input type="submit" class="download-button button-cyan" value="Download the newest version"/>
     </form>
 
@@ -26,7 +26,7 @@ TMInterface bases off everything on console commands, much like Source games suc
 The `config.txt` in `C:\Users\username\Documents\TMInterface` file enables you to run a set of commands at the beginning of TMInterface startup. In there, you can put commands like `bind r replay` to bind the R key to the command `replay` permanently.
 
 ### Downloads
-Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files](https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_1.0.2.zip). Extract these installation files into your game directory, usually `C:\Program Files (x86)\TmNationsForever` `C:\Program Files (x86)\TmUnitedForever` or `C:\Program Files (x86)\Steam\steamapps\common\TrackMania Nations Forever`.
+Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files](https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_1.0.3.zip). Extract these installation files into your game directory, usually `C:\Program Files (x86)\TmNationsForever` `C:\Program Files (x86)\TmUnitedForever` or `C:\Program Files (x86)\Steam\steamapps\common\TrackMania Nations Forever`.
 
 ### Useful commands
 * `set speed 5` - Sets the global game speed to 5x the normal speed.
