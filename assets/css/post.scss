@@ -93,11 +93,23 @@ h4 {
     margin: 0 0 15px 0;
 }
 
-code {
-    background-color: var(--code-background-color);
-    color: var(--code-color);
+pre {
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
+pre > code {
+    margin: 10px;
+    display: block;
+}
+
+code, pre {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    font-size: 103%;
+    border-radius: 5px;
+    padding: 2px;
+}
 
 .centered {
     text-align: center;

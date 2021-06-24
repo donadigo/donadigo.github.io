@@ -11,7 +11,7 @@ html, html[data-theme="light"] {
     --link-hover: #389b24;
     --light-text-color: rgb(37, 37, 37);
     --code-background-color: rgb(197, 197, 197);
-    --code-color: black;
+    --code-color: rgb(3, 59, 65);
 }
 
 html[data-theme="dark"] {
@@ -24,7 +24,7 @@ html[data-theme="dark"] {
     --link-hover: #e0f38b;
     --light-text-color: rgb(160, 160, 160);
     --code-background-color: rgb(19, 19, 19);
-    --code-color: var(--light-text-color);
+    --code-color: rgb(92, 212, 221);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,7 +38,7 @@ html[data-theme="dark"] {
         --link-hover: #e0f38b;
         --light-text-color: rgb(160, 160, 160);
         --code-background-color: rgb(19, 19, 19);
-        --code-color: var(--light-text-color);
+        --code-color: rgb(92, 212, 221);
     }
 
     html[data-theme="light"] {
@@ -51,7 +51,7 @@ html[data-theme="dark"] {
         --link-hover: #389b24;
         --light-text-color: rgb(37, 37, 37);
         --code-background-color: rgb(197, 197, 197);
-        --code-color: black;
+        --code-color: rgb(3, 59, 65);
     }
 }
 

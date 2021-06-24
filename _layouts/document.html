@@ -10,7 +10,10 @@ layout: default
 
 <div style="margin-top: 80px;">
 <h2 class="centered"><b>{{ page.title }}</b></h2>
-<h5 class="centered">A report by {{ page.authors }}</h5>
+{% if page.authors %}
+    <h5 class="centered">A report by {{ page.authors }}</h5>
+{% endif %}
+
 <h5 class="centered" ><i>{{ page.subtitle }}</i></h5>
 
 <div id="content">{{ content  }}</div>
