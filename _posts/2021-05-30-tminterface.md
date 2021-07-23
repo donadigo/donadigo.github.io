@@ -41,11 +41,8 @@ Head to the top of the page to download the installer for the newest version. If
 * **Q:** Is TMInterface compatible with Competition Patch?<br>
 **A:** Yes, TMInterface can be installed alongside the Competition Patch.
 
-* **Q:** The analog steering/acceleration does not work.<br>
-**A:** All actions need to be bound in the inputs menu ingame. While running TMInterface, you need to connect a controller device to replicate analog input. If you don't own a controller, you can use software like [VJoy](https://sourceforge.net/projects/vjoystick/) to emulate it.<br>
-
 * **Q:** The input is not injected at all.<br>
-**A:** In the game launcher, Configure -> Advanced -> Inputs -> make sure that "*Alternate method*" is **unchecked**. If it still does not work, make sure that the `execute_commands` variable is `true`. You can do that by executing `set execute_commands true`.
+**A:** Make sure that the `execute_commands` variable is `true`. You can do that by executing `set execute_commands true`.
 
 * **Q:** "Game is not compatible with TMInterface" error<br>
 **A:** It is recommended to use a standalone version of the game available [here](https://nadeo-download.cdn.ubi.com/trackmaniaforever/tmnationsforever_setup.exe).
