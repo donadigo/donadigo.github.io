@@ -20,6 +20,19 @@ TrackMania Competition Patch is a special patch for the game that does not allow
     </form>
 </div>
 
+<div style="display: flex; margin-top: 30px">
+    <div class="card shadow" style="width: 100%;">
+        <div class="card-body">
+            <h5 class="card-title warning">Warning</h5>
+            <p class="card-text">
+                The tool may be detected as malicious by your browser/antivirus. It is recommended to disable antivirus while installing the tool,
+                and adding the game installation folder to a list of antivirus exceptions. <a href="#common-questions">See how.</a> This is because the tool injects its own DLL into the game,
+                which is seen as malicious by antiviruses.
+            </p>
+        </div>
+    </div>
+</div>
+
 ### Why is there a need for this patch?
 The patch is meant to solidify & validate records uploaded on important TMX categories such as Official Campaigns and Classic tracks. With the increasing interest in TAS'ing the game, the patch is a leeway into ensuring the leaderboards will stay clean for the forseeable future. Support for this patch is currently being implemented to TMX. 
 
@@ -28,6 +41,16 @@ The patch is simply installed into the game's installation directory and from th
 
 ### How do I tell I'm running the game with the patch?
 To check if you're running the Competition Patch, look at the game's window title. If the game is fullscreen, switch to windowed mode and a (Competition Patch) should be visible in the title of the window. 
+
+### Common questions
+* **Q:** The patch gets detected as malicious by my antivirus.<br>
+**A:** Add a folder exception to your antivirus so that it doesn't scan the game directory for malicious files. For Windows Defender:
+    * Go to Windows Settings -> Updates and security -> Windows security -> Protection against viruses and threats -> Manage settings.
+    * Scroll down and choose "Add or delete exceptions".
+    * Click "Add exception" and "Folder".
+    * Choose the directory in which your game is installed, this is usually `C:\Program Files (x86)\TmNationsForever`.
+    * Confirm adding the exception.
+
 
 ### Other features
 Besides verifying that your replays are valid, the patch also provides some nice QoL changes:

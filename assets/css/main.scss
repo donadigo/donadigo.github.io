@@ -12,6 +12,7 @@ html, html[data-theme="light"] {
     --light-text-color: rgb(37, 37, 37);
     --code-background-color: rgb(197, 197, 197);
     --code-color: rgb(3, 59, 65);
+    --warning-color: #6c6c19;
 }
 
 html[data-theme="dark"] {
@@ -25,6 +26,7 @@ html[data-theme="dark"] {
     --light-text-color: rgb(160, 160, 160);
     --code-background-color: rgb(19, 19, 19);
     --code-color: rgb(92, 212, 221);
+    --warning-color: #eeee34;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +41,7 @@ html[data-theme="dark"] {
         --light-text-color: rgb(160, 160, 160);
         --code-background-color: rgb(19, 19, 19);
         --code-color: rgb(92, 212, 221);
+        --warning-color: #eeee34;
     }
 
     html[data-theme="light"] {
@@ -52,6 +55,7 @@ html[data-theme="dark"] {
         --light-text-color: rgb(37, 37, 37);
         --code-background-color: rgb(197, 197, 197);
         --code-color: rgb(3, 59, 65);
+        --warning-color: #6c6c19;
     }
 }
 
@@ -106,6 +110,26 @@ a:hover {
 
 .btn-primary {
     border-color: var(--link-color);
+}
+
+.card {
+    background-color: var(--header-color);
+    height: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-top {
+    width: 150px;
+    margin: 20px;
+    border-bottom-left-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
+}
+
+.warning {
+    color: var(--warning-color);
 }
 
 #header {

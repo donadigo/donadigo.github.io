@@ -131,3 +131,19 @@ table, th, td {
 th, td {
     padding: 7px;
 }
+
+h2 + h4 {
+    margin-top: 0px;
+}
+
+#content > h3:first-child {
+    margin-top: 0px;
+}
+
+[id]::before {
+    content: '';
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
