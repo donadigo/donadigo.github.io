@@ -15,10 +15,12 @@ TrackMania Competition Patch is a special patch for the game that does not allow
         <input type="submit" class="download-button" value="Download the newest version"/>
     </form>
 
-    <form action="https://discord.gg/5QYCJJpwAW">
+    <form action="https://discord.gg/tD4rarRYpj">
         <input type="submit" class="discord-button" value="Discord"/>
     </form>
 </div>
+<br>
+*Discuss Competition Patch in the **Competition Patch (#releases, #issues)** channels.*
 
 <div style="display: flex; margin-top: 30px">
     <div class="card shadow" style="width: 100%;">
@@ -43,6 +45,9 @@ The patch is simply installed into the game's installation directory and from th
 To check if you're running the Competition Patch, look at the game's window title. If the game is fullscreen, switch to windowed mode and a (Competition Patch) should be visible in the title of the window. 
 
 ### Common questions
+* **Q:** I cannot click the Next button when choosing the install location.<br>
+**A:** The Competition Patch has to be installed in the game install directory. This is usually `C:\Program Files (x86)\TmNationsForever`.
+Make sure that the folder you are choosing contains the `TmForever.exe` file.<br><br>
 * **Q:** The patch gets detected as malicious by my antivirus.<br>
 **A:** Add a folder exception to your antivirus so that it doesn't scan the game directory for malicious files. For Windows Defender:
     * Go to Windows Settings -> Updates and security -> Windows security -> Protection against viruses and threats -> Manage settings.

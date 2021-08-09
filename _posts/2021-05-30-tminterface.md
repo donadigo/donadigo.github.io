@@ -63,6 +63,10 @@ Head to the top of the page to download the installer for the newest version. If
 * **Q:** Is TMInterface compatible with Competition Patch?<br>
 **A:** Yes, TMInterface can be installed alongside the Competition Patch.
 
+* **Q:** I cannot click the Next button when choosing the install location.<br>
+**A:** TMInterface has to be installed in the game install directory. This is usually `C:\Program Files (x86)\TmNationsForever`.
+Make sure that the folder you are choosing contains the `TmForever.exe` file.<br>
+
 * **Q:** "Game is not compatible with TMInterface" error<br>
 **A:** It is recommended to use a standalone version of the game available [here](https://nadeo-download.cdn.ubi.com/trackmaniaforever/tmnationsforever_setup.exe).
 If you do not want to use the standalone version, [apply the Steam TMNF Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=448953593).
