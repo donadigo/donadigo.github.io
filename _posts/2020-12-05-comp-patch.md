@@ -3,6 +3,7 @@ layout: post
 title:  TrackMania Competition Patch
 date:   2020-12-05 23:00:13 +0200
 permalink: tmcp
+hidden: true
 redirect_from:
     - /tmcomppatch
 ---
@@ -10,15 +11,29 @@ redirect_from:
 ### What is Competition Patch?
 TrackMania Competition Patch is a special patch for the game that does not allow means of cheating such as using macros, slowing down the game and other forms of injecting inputs. **If you use the Steam version of the game, it is strongly recommended to use the standalone version before installing the patch – you can download it directly [here](https://nadeo-download.cdn.ubi.com/trackmaniaforever/tmnationsforever_setup.exe).**
 
-<div style="display: flex;">
-    <form action="https://github.com/donadigo/donadigo.github.io/raw/master/data/CompetitionPatch/TMCompetitionPatchSetup_1.4.9.exe" style="margin-right: 20px;">
-        <input type="submit" class="download-button" value="Download the newest version"/>
-    </form>
+<div class="row">
+    <div class="col-auto" style="padding-right: 0px">
+        <form action="{{ site.url_tmcp_latest }}">
+            <i class="fa fa-download button-icon" style="color: #ffffff; margin-top: 15px"></i>
+            <input type="submit" class="download-button" value="Download the newest version" style="width: 280px"/>
+        </form>
+    </div>
 
-    <form action="https://discord.gg/tD4rarRYpj">
-        <input type="submit" class="discord-button" value="Discord"/>
-    </form>
+    <div class="col-auto" style="padding-right: 0px">
+        <form action="https://discord.gg/tD4rarRYpj">
+            <i class="fab fa-discord fa-2x button-icon" style="color: #ffffff; margin-top: 7px"></i>
+            <input type="submit" class="discord-button" value="Discord" style="width: 220px"/>
+        </form>
+    </div>
+
+    <div class="col-auto">
+        <form action="https://paypal.me/donadigos">
+            <i class="fab fa-paypal fa-2x button-icon" style="color: #0079C1; margin-top: 7px"></i>
+            <input type="submit" class="support-button" value="Support me" style="width: 200px"/>
+        </form>
+    </div>
 </div>
+
 <br>
 *Discuss Competition Patch in the **Competition Patch (#releases, #issues)** channels.*
 
@@ -65,7 +80,7 @@ Besides verifying that your replays are valid, the patch also provides some nice
 * Disables restarting the race after clicking on opponents in top left corner, preventing from accidental resets
 
 ### Downloads
-Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files](https://github.com/donadigo/donadigo.github.io/raw/master/data/CompetitionPatch/TMCompetitionPatch_1.4.9.zip). Extract these installation files into your game directory, usually `C:\Program Files (x86)\TmNationsForever` `C:\Program Files (x86)\TmUnitedForever` or `C:\Program Files (x86)\Steam\steamapps\common\TrackMania Nations Forever`.
+Head to the top of the page to download the installer for the newest version. If you cannot use the installer for some reason (strongly recommended!), [download the raw .zip installation files]({{ site.url_tmcp_latest_zip }}). Extract these installation files into your game directory, usually `C:\Program Files (x86)\TmNationsForever` `C:\Program Files (x86)\TmUnitedForever` or `C:\Program Files (x86)\Steam\steamapps\common\TrackMania Nations Forever`.
 
 ### How do I install?
 
