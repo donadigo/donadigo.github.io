@@ -22,6 +22,6 @@ bind p toggle_speed
 bind n toggle_inputs # Bind "n" to toggle the inputs display
 set log_simulation false # Turn off information about simulation when validating
 ```
-<!-- 
+
 ### The builtin.txt file
-The `builtin.txt` file is used for saving existing settings by TMInterface. This file is separate from the `config.txt` file and is loaded before it. If you want to completely disable this functionality, see [What if I want the settings to not save and always have the default ones at startup?]({{ site.baseurl}}/tminterface/settings#what-if-i-want-the-settings-to-not-save-and-always-have-the-default-ones-at-startup). -->
+The `builtin.txt` file is used for saving existing settings by TMInterface. This file is separate from the `config.txt` file and is loaded before it. If you want to completely disable this functionality, see [What if I want the settings to not save and always have the default ones at startup?]({{ site.baseurl}}/tminterface/settings#what-if-i-want-the-settings-to-not-save-and-always-have-the-default-ones-at-startup).

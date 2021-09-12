@@ -25,7 +25,6 @@ After opening the `config.txt` file in Notepad or other text editor, copy the fo
 bind c toggle_console
 ```
 
-<!-- 
 **This will bind the "c" key on your keyboard to toggling the console. You can replace the key with a key of your own choice. See [Available keys]({{ site.baseurl}}/tminterface/bindings#available-keys) for all available options. For changes to take effect, restart TMInterface.**
 
 ### What if I want the settings to not save and always have the default ones at startup?
@@ -33,4 +32,4 @@ If you do not want the settings to be saved by TMInterface, you can do so by edi
 ```
 #
 ```
-**This will disable saving any settings you set in the UI or by the `set` commands.** -->
+**This will disable saving any settings you set in the UI or by the `set` commands.**
