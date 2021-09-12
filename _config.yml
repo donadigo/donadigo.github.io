@@ -30,8 +30,8 @@ future: true
 
 url_tmcp_latest: https://github.com/donadigo/donadigo.github.io/raw/master/data/CompetitionPatch/TMCompetitionPatchSetup_1.4.9.exe
 url_tmcp_latest_zip: https://github.com/donadigo/donadigo.github.io/raw/master/data/CompetitionPatch/TMCompetitionPatch_1.4.9.zip
-url_tminterface_latest: https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_Setup_1.0.7.exe
-url_tminterface_latest_zip: https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_1.0.7.zip
+url_tminterface_latest: https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_Setup_1.0.8.exe
+url_tminterface_latest_zip: https://github.com/donadigo/donadigo.github.io/raw/master/data/TMInterface/TMInterfaceBeta_1.0.8.zip
 
 include: ['_pages']
 

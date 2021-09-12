@@ -93,6 +93,22 @@ enable the game camera and perform modifications in the game scene to make it ab
 
 * `bf_search_forever` - If set to `true`, after finding a better time, the script will set the new inputs as original inputs and begin to search for a lower time than the previous one. The inputs will always be printed immediately after finding a faster time. By default this is `false`, which means the script will stop when a new time is found.
 
+* `bf_play_sound` - if set to `true`, plays a sound on each improvement. By default this is `false`, which means disabled. 
+
 * `bf_target_cp` - the target checkpoint index to optimise for. Note that checkpoints are ordered in the way the bruteforced replay passed them. The first checkpoint has an index of `1`, second - `2` and so on. By default this is `-1`.
 
 * `bf_target_trigger` - the target custom trigger index to optimise for. A possible target trigger does not need to be passed by the bruteforced replay. The first trigger has an index of `1`, second - `2` and so on. By default this is `-1`.
+
+* `bf_trigger_eval` - the evaluation strategy used for evaluting triggers. The default strategy is `distance` which compares the closest distance to the trigger against the previous result. `distance,velocity` first compares the distance, and if it is close enough, will evaluate velocity. `velocity`  will only compare only raw velocity after hitting the trigger. Pseudocode of the evaluation:
+```py
+if strategy == 'distance' or strategy == 'distance,velocity':
+    if time < prev.time:
+        return True
+    
+    if strategy == 'distance,velocity':
+        return abs(distance - prev.distance) < 0.01 and velocity > prev.velocity
+    else:
+        return distance < prev.distance
+else if strategy == 'velocity':
+    return velocity > prev.velocity
+```

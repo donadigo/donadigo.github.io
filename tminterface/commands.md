@@ -225,9 +225,9 @@ This command can be used anytime after the simulation is done because TMInterfac
 * `toggle_editor` - Unfinished.
 
 ### Bruteforce
-* `add_trigger` - Adds a trigger to evaluate the car state when the car hits the specified trigger. The coordinates are specified using a format of: `x y z size_x size_y size_z`, all elements are in game units, where one platform block = 32x8x32 units. The `toggle_info` command can be used to obtain the coordinates at a desired point.
+* `add_trigger` - Adds a trigger to evaluate the car state when the car hits the specified trigger. The coordinates are specified using a format of: `x1 y1 z1 x2 y2 z2`, all elements are in game units. The two points mark the coordinates of the start and end of the cuboid. The `toggle_info` command can be used to obtain the coordinates at a desired point. 
 
-    Syntax & Example: `add_trigger 500 40 500 32 8 32` - adds a trigger at position `[500 40 500]` of size `[32 8 32]`.
+    Syntax & Example: `add_trigger 500 40 500 800 90 800` - adds a trigger at position `[500 40 500]` expanding to coordinates `[800 90 800]`.
 
 <br>
 * `remove_trigger` - Removes a trigger from the trigger list, provided the index. To list all triggers and their indexes use `triggers`.
