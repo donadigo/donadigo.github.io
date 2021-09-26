@@ -68,7 +68,7 @@ After successfully adding a trigger to your map, you are ready to configure the 
 1. Bring up the **Settings** panel, go to **Bruteforce**.
 2. Tick the **Enable Bruteforce** option.
 3. Expand the **Optimization** header.
-4. Choose **Trigger time** for the *Optimization Target*.
+4. Choose **Trigger time** for the **Optimization Target**.
 5. Enter `1` for the **Target Trigger** if it is not already entered.
 6. Choose **Distance** for the **Evaluation Metric**.
 7. [Launch the Bruteforce script]({{ site.baseurl }}/tminterface/what-is-bf#launching-bruteforce).
