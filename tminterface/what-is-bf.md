@@ -6,7 +6,7 @@ title: TMInterface Guide
 ## What is Bruteforce?
 Bruteforce is an automated script, built into TMInterface, that allows you to search for a faster time. This search is completely automatic and does not require manual adjustments of inputs. You simply run the script and let it simulate 1000's of runs, each time with slightly changed inputs from the original replay. If the bruteforce script finds a faster time than your original replay, it will display the inputs of the new run, as well as save them to a special `result.txt` file.
 
-The bruteforce script can be configured for other targets other than the finish time, such as a specific checkpoint time or triggers. Its settings include how inputs should be changed, when they should be changed and more. See [Parameter configuration]({{ site.baseurl }}/tminterface/param-config.md).
+The bruteforce script can be configured for other targets other than the finish time, such as a specific checkpoint time or triggers. Its settings include how inputs should be changed, when they should be changed and more. See [Parameter configuration]({{ site.baseurl }}/tminterface/param-config).
 
 There are no universal settings that apply to any replay. Every replay needs tuning the settings according to the task at hand for optimal search. These settings can be customized in the **Bruteforce** tab in the Settings UI, or through console commands.
 
@@ -31,7 +31,7 @@ First, you must obtain a **base** replay, which input's will be changed to searc
 3. Ingame from the main menu, click **Editors**, then **Edit a Replay**, choose the replay you want to bruteforce from the list.
 4. Click **Launch** and then **Validate**.
 
-After clicking the **Validate** button, TMInterface will open a separate console window in which you can see the results of the script. **If the console repeadetly displays yellow text, see [Parameter configuration]({{ site.baseurl }}/tminterface/param-config.md).**
+After clicking the **Validate** button, TMInterface will open a separate console window in which you can see the results of the script. **If the console repeadetly displays yellow text, see [Parameter configuration]({{ site.baseurl }}/tminterface/param-config).**
 
 <br>
 Each line displayed in the console represents one combination of inputs that has been checked. For example, a line:
