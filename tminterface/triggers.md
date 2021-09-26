@@ -9,7 +9,7 @@ Triggers are a part of the builtin TMInterface bruteforce script that allow you 
 Because triggers are a custom feature of TMInterface, they can be evaluated much more precisely than a simple finish/checkpoint time. There are different metrics available to choose how a trigger should be evaluated.
 
 ### Stadium coordinate system
-A trigger is marked with begin and end point coordinates that lie within the track. The available Stadium building area itself has a size of **1024x1024x1024** units:
+A trigger is marked with begin and end point coordinates that lie within the track. The available Stadium building area itself has a size of **1024x256x1024** units:
 
 <img style="margin-top: 40px; width: 100%; margin-bottom: 30px" src="{{ site.baseurl }}/assets/images/trigger_stad_1.png"/>
 
