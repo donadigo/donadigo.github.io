@@ -91,3 +91,10 @@ Head to the top of the page to download the installer for the newest version. If
 ### How do I uninstall?
 
 If you want to uninstall the patch, navigate to the game directory (usually `C:\Program Files (x86)\TmNationsForever`) and rename `dinput8.dll` to anything other than that and the patch should stop working. Deleting `dinput8.dll` and `TMCompPatch.dll` should also work.
+
+
+### Can I use this on Linux?
+
+Yes! But there are a few tweaks. First of all, you need to install an older version, [1.4.1](https://github.com/donadigo/donadigo.github.io/raw/f58385de07cbe9a681701add661a7ec74e715378/data/TMCompetitionPatch_1.4.1.zip), because newer versions break keyboard and mouse usage. Unzip this file where TrackMania is located (if you use steam, it should be in `~/.steam/steam/steamapps/common/TrackMania United Forever`). Then, you need to setup a dll override in wine.\
+To do that, open a terminal, then type `export WINEPREFIX="/path/to/your/wineprefix/"`. If you installed TrackMania using steam, you need to find the correct path to your game's wineprefix. The path should be `/home/$USERNAME/.steam/steam/steamapps/compatdata/NUMBER/`, where NUMBER is 4800 for TrackMania United Forever and 11020 for TrackMania Nations Forever. Then, just type `winecfg`. A window should open. Go in the "libraries" tab, search for dinput8.dll in the drop-down list and click on "add". Check in the list below if dinput8.dll is set to "native, builtin".\
+You should now be good to go, just launch the game like you normally do.
