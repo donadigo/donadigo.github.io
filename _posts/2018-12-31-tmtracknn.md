@@ -46,7 +46,7 @@ All of this data can be pulled from a .Gbx file that TrackMania saves when savin
 ### Getting the data and preprocessing
 This step is sometimes very hard to overcome or can even be expensive for ML projects.
 
-**In this case the process was really easy.** Conviniently there’s already a website called [Trackmania Exchange (TMX)](https://tmnforever.tm-exchange.com/) which provides a large collection of tracks made by people. The tracks can be sorted by their style and award count. I quickly wrote a JS script to download all tracks on the current page and downloaded ~3500 1-minute tech tracks. On average a track has around 100 blocks after preprocessing.
+**In this case the process was relatively easy.** Conviniently there’s already a website called [Trackmania Exchange (TMX)](https://tmnforever.tm-exchange.com/) which provides a large collection of tracks made by people. The tracks can be sorted by their style and award count. I quickly wrote a [Chrome extension](https://github.com/donadigo/TMXDownloader) to download all tracks on the current page and downloaded ~3500 1-minute tech tracks. On average a track has around 100 blocks after preprocessing.
 
 Preprocessing involves reading the map file and extracting the blocks from it. preprocessing.py does that using gbx.py, then processes this information and saves a simplified structure of each track. Here’s an example of one entry in the training data file:
 ```
@@ -107,13 +107,13 @@ The position model’s output is two features: the vector to add to the position
 
 Models are currently implemented in Keras and here are their architectures:
 
-* [Block model](https://github.com/donadigo/TMTrackNN/blob/master/models.py#L5)<br>
+* [Block model](https://github.com/donadigo/TMTrackNN/blob/master/models.py#L6)<br>
 <img style="margin-top: 20px; width: 60%; margin-bottom: 60px; margin-left: 100px;" src="{{ site.baseurl }}/assets/images/tmtracknn_8.png"/>
 
-* [Position model](https://github.com/donadigo/TMTrackNN/blob/master/models.py#L15)<br>
+* [Position model](https://github.com/donadigo/TMTrackNN/blob/master/models.py#L27)<br>
 <img style="margin-top: 20px; width: 60%; margin-bottom: 60px; margin-left: 100px;" src="{{ site.baseurl }}/assets/images/tmtracknn_9.png"/>
 
-### Preparing data for training ([code](https://github.com/donadigo/TMTrackNN/blob/master/train_pos.py))
+### Preparing data for training ([code](https://github.com/donadigo/TMTrackNN/blob/master/preprocessing.py))
 To be able to feed the data to our models we need to normalize it and transform the block tuples we’ve seen before to vectors.
 
 For encoding a tuple, we will encode each feature separately, concatenate them all and feed it to the network. We will one-hot encode the block ID so that `14` becomes:
@@ -136,9 +136,9 @@ because:
 [14, 5, 16] — [15, 5, 15] = [-1, 0, 1]
 ```
 
-The reason of doing this is that with this transformation we don’t need to care about the map size anymore, and we’re not restricting our inputs to be always a maximum of 32x32x32.
+The reason for doing this is that with this transformation we don’t need to care about the map size anymore, and we’re not restricting our inputs to be always a maximum of 32x32x32.
 
-We will scale all those vectors with [MinMaxScaler from sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html) to make sure that they stay in the range of `[0, 1)`.
+We will scale all those vectors with [MinMaxScaler from sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html) to make sure that they stay in the range of `[0, 1]`.
 
 Finally, the rotation can be easily one-hot encoded also, so that rotation 0 (north) becomes:
 ```
@@ -164,17 +164,17 @@ The final input for one sample for the position model looks like this:
 
 **For the block model, we only need the first encoding of the block ID, since it only predicts what block type would likely to be put next.**
 
-### Generating new tracks ([code](https://github.com/donadigo/TMTrackNN/blob/master/builder.py#L110))
+### Generating new tracks ([code](https://github.com/donadigo/TMTrackNN/blob/master/builder.py#L186))
 When generating a new track, we begin by randomly placing a start block on the map. We encode this sequence of length 1 and feed it to the block model. At the output we get probabilities of the block type to put next. We apply a temperature to this output, and then sample.
 
 After that, we encode the inputs again but for the position network, run them through the network and receive real-valued position vector and a rotation probability vector.
 
-After that, we perform a bunch of [additional checks](https://github.com/donadigo/TMTrackNN/blob/master/builder.py#L170) (if the track doesn’t exceed map size etc.) in the code to make sure that the output is somewhat correct (*after all, the networks aren’t always perfect*) and repeat the process again until we reach the desired track length in blocks.
+After that, we perform a bunch of [additional checks](https://github.com/donadigo/TMTrackNN/blob/master/builder.py#L252) (if the track doesn’t exceed map size etc.) in the code to make sure that the output is somewhat correct (*after all, the networks aren’t always perfect*) and repeat the process again until we reach the desired track length in blocks.
 
 At the end of the track we need to put a finish block so that we can actually finish it. This is done by omitting the whole “block prediction” step in the graph down below and just asking the position network to predict the position for a finish block:
 <img style="margin-top: 40px; width: 130%; margin-bottom: 40px; margin-left: -120px" src="{{ site.baseurl }}/assets/images/tmtracknn_10.png"/>
 
-Finally, we [translate all the position vectors to actual map coordinates](https://github.com/donadigo/TMTrackNN/blob/master/gamemap.py#L41) so that the track can be saved for the game to read.
+Finally, we [translate all the position vectors to actual map coordinates](https://github.com/donadigo/TMTrackNN/blob/master/gamemap.py#L46) so that the track can be saved for the game to read.
 
 ### Results
 After training the networks and going through many more problems that I faced, generated tracks are often driveable by a human and resemble the “tech” style. Here are a couple of screenshots of some generated tracks:
