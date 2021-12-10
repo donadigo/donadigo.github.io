@@ -35,7 +35,7 @@ TrackMania Competition Patch is a special patch for the game that does not allow
 </div>
 
 <br>
-*Discuss Competition Patch in the **Competition Patch (#releases, #issues)** channels.*
+*Got any issues? Discuss issues or bugs in the **#issues-bugs** Discord channel.*
 
 <div style="display: flex; margin-top: 30px">
     <div class="card shadow" style="width: 100%;">
