@@ -1,0 +1,1 @@
+window.location.replace(window.location.href.replace("donadigo.github.io", "donadigo.com"));
